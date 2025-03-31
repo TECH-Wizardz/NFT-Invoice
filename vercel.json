@@ -1,12 +1,11 @@
-
 {
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ],
     "rewrites": [
-      { "source": "/mint", "destination": "/" },
-      { "source": "/marketplace", "destination": "/" },
-      { "source": "/Invoice-details/:tokenId", "destination": "/" },
-      { "source": "/dashboard", "destination": "/" },
-      { "source": "/how-it-works", "destination": "/" },
-      { "source": "/offer-loan", "destination": "/" },
-      { "source": "/(.*)", "destination": "/" }
+      { "source": "/(.*)", "destination": "/index.html" }
     ]
   }
