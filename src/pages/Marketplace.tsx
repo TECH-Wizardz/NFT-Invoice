@@ -21,6 +21,7 @@ export function Marketplace() {
     },
   });
 
+  
   // Step 2: Fetch Minted Invoices based on Token IDs
   const { data: mintedData, loading: mintedLoading } = useQuery(GET_MINTED_INVOICES_BY_TOKEN_IDS, {
     variables: { tokenIds },
@@ -29,6 +30,7 @@ export function Marketplace() {
     onCompleted: (data) => {
       console.log('Minted Data:', data);
   }});
+
 
 
   useEffect(() => {
